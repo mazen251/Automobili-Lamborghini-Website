@@ -5,13 +5,13 @@ Welcome to the Automobili Lamborghini Website repository. This project is a web 
 
 ## Table of Contents
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- Features
+- Technologies Used
+- Setup and Installation
+- UI/UX
+- Usage
+- Contributing
+- Contact
 
 ## Features
 
@@ -69,11 +69,28 @@ To get a local copy up and running, follow these simple steps.
 5. **Run the application**:
    - Place the project directory in your local server's root directory (e.g., `htdocs` for XAMPP).
    - Open your web browser and navigate to `http://localhost/Automobili-Lamborghini-Website`.
+  
+## UI/UX
+
+### Login & SignUp
+![Login](assets/login.png)
+![Register](assets/reg.png)
+
+### Main Page
+![Main Page](assets/main.png)
+
+### Models
+![Models Page](assets/models.png)
+
+### About Us
+![About Us Page](assets/abtus.png)
 
 ## Usage
 
-- **Home Page**: Browse through the various Lamborghini models and view detailed information.
-- **User Account**: Register and log in to access personalized features.
+- **Login & SignUp**: Users can create a new account or log in to an existing account to access personalized features.
+- **Main Page**: Browse through the homepage to see an overview of the Lamborghini models and other featured content.
+- **Models**: View detailed information about various Lamborghini models.
+- **About Us**: Learn more about the Lamborghini brand and its history.
 - **Admin Panel**: Manage car listings and user accounts (admin access required).
 
 ## Contributing
@@ -86,12 +103,8 @@ Contributions are what make the open-source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
 ## Contact
 
-Mazen - [your-email@example.com](mailto:your-email@example.com)
+Mazen - [Mazen Walid](https://www.linkedin.com/in/mazen-walid-225582208/)
 
 Project Link: [https://github.com/mazen251/Automobili-Lamborghini-Website](https://github.com/mazen251/Automobili-Lamborghini-Website)
