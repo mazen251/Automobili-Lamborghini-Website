@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamborghini Aventador SVJ</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <nav class="menu left-menu">
+    <a href="#" class="nav-link">Home</a>
+    <a href="#" class="nav-link">Models</a>
+    <a href="#" class="nav-link">Custom Solutions</a>
+  </nav>
+  <div class="logo-container">
+    <img src="media/logo.png" alt="Logo" class="logo"> 
+  </div>
+  <nav class="menu right-menu">
+    <a href="#" class="nav-link">Ownership</a>
+    <a href="#" class="nav-link">Motorsport</a>
+    <a href="#" class="nav-link">About</a>
+    <button class="register-button" onclick="window.location.href='Login & Reg/login_form.html';">Login</button>
+  </nav>
+</header>
+
+<main>
+  <section class="showcase" id="showcase">
+    <h1 class="car-title" id="car-title">Aventador SVJ</h1>
+    <a href="#" class="book-now-button" id="book-now-button">Book now</a>
+  </section>  
+</main>
+
+<footer>
+  <p>© 2023 Lamborghini. All rights reserved.</p>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const title = document.getElementById('car-title');
+    const button = document.getElementById('book-now-button');
+    const scrollPosition = window.scrollY;
+    title.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+    button.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px) translateX(50%)';
+  });
+</script>
+
+</body>
+</html>

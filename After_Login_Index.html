@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamborghini Aventador SVJ</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <nav class="menu left-menu">
+    <a href="After_Login_Index.html" class="nav-link">Home</a>
+    <a href="models.html" class="nav-link">Models</a>
+    <a href="#" class="nav-link">Custom Solutions</a>
+  </nav>
+  <div class="logo-container">
+    <img src="media/logo.png" alt="Logo" class="logo"> 
+  </div>
+  <nav class="menu right-menu">
+    <a href="Ownership.html" class="nav-link">Ownership</a>
+    <a href="#" class="nav-link">Motorsport</a>
+    <a href="#" class="nav-link">About</a>
+    <div class="profile-dropdown">
+      <button class="profile-icon" id="profile-icon">&#x1F464;</button>
+      <div class="profile-dropdown-content">
+          <a href="#">Update User Info</a>
+          <a href="Index.html" onclick="return alert('Logging out. Are you sure?')">Logout</a>
+          <a href="delete_user.html">Delete User</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="showcase" id="showcase">
+    <h1 class="car-title" id="car-title">Aventador SVJ</h1>
+    <a href="#" class="book-now-button" id="book-now-button">Book now</a>
+  </section>  
+</main>
+
+<footer>
+  <p>© 2023 Lamborghini. All rights reserved.</p>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const title = document.getElementById('car-title');
+    const button = document.getElementById('book-now-button');
+    const scrollPosition = window.scrollY;
+    title.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+    button.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px) translateX(50%)';
+  });
+
+  document.getElementById("profile-icon").addEventListener("click", function() {
+  var dropdown = document.querySelector(".profile-dropdown-content");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+});
+</script>
+
+</body>
+</html>

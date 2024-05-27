@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamborghini Ownership</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <nav class="menu left-menu">
+    <a href="After_Login_Index.html" class="nav-link">Home</a>
+    <a href="models.html" class="nav-link">Models</a>
+    <a href="#" class="nav-link">Custom Solutions</a>
+  </nav>
+  <div class="logo-container">
+    <img src="media/logo.png" alt="Logo" class="logo"> 
+  </div>
+  <nav class="menu right-menu">
+    <a href="Ownership.html" class="nav-link">Ownership</a>
+    <a href="#" class="nav-link">Motorsport</a>
+    <a href="#" class="nav-link">About</a>
+    <div class="profile-dropdown">
+      <button class="profile-icon" id="profile-icon">&#x1F464;</button>
+      <div class="profile-dropdown-content">
+          <a href="#">Update User Info</a>
+          <a href="Index.html" onclick="return alert('Logging out. Are you sure?')">Logout</a>
+          <a href="delete_user.html">Delete User</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="Ownership" class="background-ownership-section" style="color: #ffffff;">
+    <h1 style="font-weight: bold;">About Automobili Lamborghini S.p.A.</h1>
+    <p style="font-weight: bold;">Welcome to Lamborghini Exclusives, where our passion for luxury automobiles fuels our commitment to providing you with the finest vehicles. We boast a rich heritage of automotive excellence, and our unwavering dedication to quality and customer satisfaction has solidified our position as a revered name in luxury car sales and services.</p>
+  <!--
+    <h2 style="font-weight: bold;">Our Storied History</h2>
+    <p style="font-weight: bold;">Automobili Lamborghini S.p.A., a legendary name in the world of luxury sports cars, has a storied history that dates back to its founding in 1963 by Ferruccio Lamborghini. The company's origins can be traced to Ferruccio's dissatisfaction with the performance and service of his personal Ferrari, which led him to establish his own automotive venture in Sant'Agata Bolognese, Italy. Lamborghini's vision was to create high-performance sports cars that combined cutting-edge engineering, exquisite Italian craftsmanship, and unmatched luxury.</p>
+  
+    <h3 style="font-weight: bold;">Iconic Models and Innovation</h3>
+    <p style="font-weight: bold;">One of Lamborghini's most iconic models, the Lamborghini Miura, introduced in 1966, revolutionized the automotive industry with its mid-engine design and breathtaking speed. This innovative approach set the stage for Lamborghini's future success in producing some of the world's most sought-after supercars. Throughout the years, Lamborghini has consistently pushed the boundaries of automotive technology, introducing groundbreaking models like the Countach, Diablo, and Aventador, each pushing the envelope of design and performance.</p>
+  
+    <h3 style="font-weight: bold;">Passion for Motorsports</h3>
+    <p style="font-weight: bold;">Lamborghini's involvement in motorsports, particularly in the Lamborghini Super Trofeo series and GT racing, showcases the brand's commitment to pushing its vehicles to the limit and continuously improving their performance capabilities.</p>
+  
+    <h2 style="font-weight: bold;">Our Legacy Today</h2>
+    <p style="font-weight: bold;">Today, Automobili Lamborghini S.p.A. stands as a symbol of luxury, power, and prestige. Its cars are not just vehicles; they are works of art, coveted by enthusiasts and collectors worldwide. With a dedication to innovation and a relentless pursuit of perfection, Lamborghini continues to define the very essence of automotive excellence, delivering unforgettable driving experiences that transcend generations. Whether it's the roar of a Lamborghini engine or the sleek lines of its iconic design, Lamborghini remains an enduring testament to the pursuit of automotive perfection.</p>
+  
+    <h1 style="font-weight: bold;">Honored Names</h1>
+    <p style="font-weight: bold;">At Automobili Lamborghini S.p.A., we pay homage to many esteemed individuals who have contributed to our legacy. Here are some of the honored names, many of them Italian:</p>
+    <ul style="font-weight: bold;">
+      <li>Ferruccio Lamborghini</li>
+      <li>Marcello Gandini</li>
+      <li>Giotto Bizzarrini</li>
+      <li>Valentino Balboni</li>
+      <li>Lamborghini family</li>
+      <li>Giampaolo Dallara</li>
+      <li>Horacio Pagani</li>
+      <li>Adriano Ruggiero</li>
+      <li>Giulio Alfieri</li>
+      <li>Andrea Zagato</li>
+    </ul>
+  -->
+  </section>
+</main>
+
+
+<section id="employees" class="background-employee-section">
+    <div class="employee" onclick="displayEmployeeProfile(0)">
+        <img src="media/employees/1.png" alt="Employee 1" class="employee-image">
+        <p>Hill</p>
+    </div>
+    <div class="employee" onclick="displayEmployeeProfile(1)">
+        <img src="media/employees/2.png" alt="Employee 2" class="employee-image">
+        <p>John</p>
+    </div>
+</section>
+
+<section id="employee-details">
+    <h2 id="employee-name"></h2>
+    <p id="employee-position"></p>
+    <p id="employee-bio"></p>
+    <img id="employee-image" src="" alt="Employee Image">
+</section>
+
+<footer>
+    <p>© 2023 Lamborghini. All rights reserved.</p>
+</footer>
+
+<script>
+    const employees = [
+    {
+      name: 'CEO: Hill Torres Clark',
+      position: '',
+      bio: 'Hill Torres Clark is the driving force behind Lamborghini\'s innovative direction as the Chief Executive Officer. With a lifelong passion for automotive excellence and a visionary mindset, Hill has steered Lamborghini toward new horizons, blending cutting-edge technology with a commitment to sustainability and luxury.',
+      image: 'media/employees/1.png'
+    },
+    {
+      name: 'CTO: John Flares White',
+      position: '',
+      bio: 'John Flares White, as the Chief Technology Officer (CTO) at Lamborghini, embodies a dynamic fusion of technical prowess and visionary leadership. With an extensive background in technological innovation and a relentless pursuit of excellence, John spearheads Lamborghini\'s technological evolution, driving the company towards unprecedented advancements in the automotive landscape.',
+      image: 'media/employees/2.png'
+    },
+    ];
+
+
+    let lastClickedIndex = null;
+
+    function displayEmployeeProfile(index) {
+      const employee = employees[index];
+      const nameElement = document.getElementById('employee-name');
+      const positionElement = document.getElementById('employee-position');
+      const bioElement = document.getElementById('employee-bio');
+      const imageElement = document.getElementById('employee-image');
+
+      nameElement.textContent = employee.name;
+      positionElement.textContent = employee.position;
+      bioElement.textContent = employee.bio;
+      imageElement.src = employee.image;
+      imageElement.alt = employee.name + "'s Image";
+
+      const employeesContainers = document.querySelectorAll('.employee');
+
+      if (lastClickedIndex !== null) {
+          employeesContainers[lastClickedIndex].style.display = 'block';
+      }
+
+      employeesContainers[index].style.display = 'none';
+
+      lastClickedIndex = index;
+
+      const employeeDetails = document.getElementById('employee-details');
+      employeeDetails.style.display = 'flex';
+      employeeDetails.style.alignItems = 'center';
+      employeeDetails.style.justifyContent = 'flex-start';
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamborghini Models</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="background-image2">
+
+  <header class="navbar">
+    <nav class="menu left-menu">
+      <a href="After_Login_Index.html" class="nav-link">Home</a>
+      <a href="models.html" class="nav-link active">Models</a>
+      <a href="#" class="nav-link">Custom Solutions</a>
+    </nav>
+    <div class="logo-container">
+      <img src="media/logo.png" alt="Logo" class="logo"> 
+    </div>
+    <nav class="menu right-menu">
+      <a href="Ownership.html" class="nav-link">Ownership</a>
+      <a href="#" class="nav-link">Motorsport</a>
+      <a href="#" class="nav-link">About</a>
+      <div class="profile-dropdown">
+        <button class="profile-icon" id="profile-icon">&#x1F464;</button>
+        <div class="profile-dropdown-content">
+            <a href="#">Update User Info</a>
+            <a href="Index.html" onclick="return confirmLogout()">Logout</a>
+            <a href="delete_user.html">Delete User</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="model-background" id="model-back">
+      <h1 class="model-back" id="model-back">Available Models</h1>
+    </section>
+
+    <!-- Model Section 1 -->
+    <section class="model-display" id="model-display1">
+      <img src="media/models/model 1.png" alt="Aventador SVJ" class="model-image">
+      <div class="model-details">
+        <h1>Lamborghini Aventador SVJ</h1>
+        <div class="specs" id="specs-container1" style="display: none;">
+          <div class="spec-item">
+            <h2>MAX. POWER</h2>
+            <p>566 kW (770 CV) at 8,500 rpm</p>
+          </div>
+          <div class="spec-item">
+            <h2>TOP SPEED</h2>
+            <p>> 350 km/h</p>
+          </div>
+          <div class="spec-item">
+            <h2>ACCELERATION</h2>
+            <p>0-100 km/h in 2.8 s</p>
+          </div>
+          <div class="spec-item">
+            <h2>GEARBOX</h2>
+            <p>7 speed ISR, shifting characteristic depending on drive select mode</p>
+          </div>
+        </div>
+        <button class="spec-link" data-target="specs-container1">Technical Specifications</button>
+      </div>
+    </section>
+
+    <!-- Model Section 2 -->
+    <section class="model-display" id="model-display2">
+      <img src="media/models/model 2.png" alt="Miura STP" class="model-image">
+      <div class="model-details">
+        <h1>Lamborghini Miura STP</h1>
+        <div class="specs" id="specs-container2" style="display: none;">
+          <div class="spec-item">
+            <h2>MAX. POWER</h2>
+            <p>450 kW (612 CV) at 7,000 rpm</p>
+          </div>
+          <div class="spec-item">
+            <h2>TOP SPEED</h2>
+            <p>> 320 km/h</p>
+          </div>
+          <div class="spec-item">
+            <h2>ACCELERATION</h2>
+            <p>0-100 km/h in 3.5 s</p>
+          </div>
+          <div class="spec-item">
+            <h2>GEARBOX</h2>
+            <p>8-speed automatic, paddle shifters</p>
+          </div>
+        </div>
+        <button class="spec-link" data-target="specs-container2">Technical Specifications</button>
+      </div>
+    </section>
+
+    <!-- Model Section 3 -->
+    <section class="model-display" id="model-display3">
+      <img src="media/models/model 3.png" alt="Diablo FNS" class="model-image">
+      <div class="model-details">
+        <h1>Lamborghini Diablo FNS</h1>
+        <div class="specs" id="specs-container3" style="display: none;">
+          <div class="spec-item">
+            <h2>MAX. POWER</h2>
+            <p>500 kW (680 CV) at 6,500 rpm</p>
+          </div>
+          <div class="spec-item">
+            <h2>TOP SPEED</h2>
+            <p>> 360 km/h</p>
+          </div>
+          <div class="spec-item">
+            <h2>ACCELERATION</h2>
+            <p>0-100 km/h in 2.9 s</p>
+          </div>
+          <div class="spec-item">
+            <h2>GEARBOX</h2>
+            <p>6-speed manual, rear-wheel drive</p>
+          </div>
+        </div>
+        <button class="spec-link" data-target="specs-container3">Technical Specifications</button>
+      </div>
+    </section>
+
+    <!-- Model Section 4 -->
+    <section class="model-display" id="model-display4">
+      <img src="media/models/model 4.png" alt="Hurcane DES" class="model-image">
+      <div class="model-details">
+        <h1>Lamborghini Diablo FNS</h1>
+        <div class="specs" id="specs-container3" style="display: none;">
+          <div class="spec-item">
+            <h2>MAX. POWER</h2>
+            <p>500 kW (680 CV) at 6,500 rpm</p>
+          </div>
+          <div class="spec-item">
+            <h2>TOP SPEED</h2>
+            <p>> 360 km/h</p>
+          </div>
+          <div class="spec-item">
+            <h2>ACCELERATION</h2>
+            <p>0-100 km/h in 2.9 s</p>
+          </div>
+          <div class="spec-item">
+            <h2>GEARBOX</h2>
+            <p>6-speed manual, rear-wheel drive</p>
+          </div>
+        </div>
+        <button class="spec-link" data-target="specs-container3">Technical Specifications</button>
+      </div>
+    </section>
+    
+
+  </main>
+
+  <footer>
+    <p>© 2023 Lamborghini. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Add click event listeners to all buttons with class "spec-link"
+    const specButtons = document.querySelectorAll('.spec-link');
+
+    specButtons.forEach((button) => {
+      button.addEventListener('click', function () {
+        const targetId = button.getAttribute('data-target');
+        const specsContainer = document.getElementById(targetId);
+
+        // Toggle the visibility of the associated specs container
+        if (specsContainer.style.display === 'none' || specsContainer.style.display === '') {
+          specsContainer.style.display = 'block';
+        } else {
+          specsContainer.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

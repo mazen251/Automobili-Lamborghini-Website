@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(20, 20, 20, 0.85);
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.left-menu {
+  margin-right: auto;
+}
+
+.right-menu {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #73706d;
+}
+
+.register-button {
+  background: none;
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.register-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.showcase {
+  position: relative;
+  height: 100vh;
+  background: url('media/3.jpg') center center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.showcase::before,
+.showcase::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20%;
+  z-index: 1;
+}
+
+.showcase::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.showcase::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.car-title {
+  color: #fff;
+  font-size: 5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-out;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .car-title {
+    font-size: 3rem;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(20, 20, 20, 0.85);
+}
+
+footer p {
+  color: #666;
+}
+
+.logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.logo {
+  height: 110px;
+  width: auto;
+}
+
+/* Additional styles from the second CSS block */
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+#employees {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.employee {
+  text-align: center;
+  margin: 10px;
+}
+
+.employee img {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+
+#employee-image {
+  width: 300px;
+  height: auto;
+  display: none; /* Hide the image by default */
+}
+
+#employee-details {
+  min-height: 200px;
+}
+
+/* Additional styles from the second CSS block */
+.book-now-button {
+  background-color: #c46606;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: italic;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  position: absolute;
+  transform: translateX(50%);
+  transition: transform 0.3s ease-out;
+  z-index: 3;
+  cursor: pointer;
+  bottom: 320px;
+  right: 52%;
+}
+
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.profile-icon {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.profile-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: -8px 0px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+  right: 100%;
+  margin-top: 10px;
+}
+
+.profile-dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.profile-dropdown-content a:hover {
+  background-color: #444;
+}
+
+.profile-dropdown:hover .profile-dropdown-content {
+  display: block;
+}
+
+.background-ownership-section {
+  background-image: url('media/back2.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; /* Center the background image */
+  min-height: 100vh; /* Set a minimum height to ensure coverage */
+}
+
+.model-image {
+  width: 50%;
+  max-width: 600px;
+  margin-right: 0px; /* Add margin-right instead of margin-bottom */
+}
+
+.spec-link:hover {
+  background: #111;
+  color: #fff;
+}
+
+.specs {
+  margin-top: 30px;
+  border: 1px solid #5f5c5c;
+  background-color: #201f1f;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.specs h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.specs p {
+  font-size: 1.2rem;
+  color: #cf1010;
+  margin: 10px 0;
+}
+
+.spec-link {
+  margin-top: 0; /* Remove the margin-top to center the button vertically */
+  align-self: center; /* Center the button vertically within its container */
+  text-decoration: none;
+  background: #e0e0e0;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+
+.background-image2 {
+  background-image: url('media/back.jpg'); /* Replace 'your-background-image.jpg' with the path to your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
